@@ -19,7 +19,7 @@ jobs:
          - name: Installing Node.js
            uses: actions/setup-node@v3
            with:
-              node-version: 16.17.0
+              node-version: 20.11.0
               cache: "npm"
 
          - name: Saving dependencies for next jobs
@@ -42,7 +42,7 @@ jobs:
          - name: Installing Node.js
            uses: actions/setup-node@v3
            with:
-              node-version: 16.17.0
+              node-version: 20.11.0
               cache: "npm"
 
          - name: Restoring dependencies
@@ -65,7 +65,7 @@ jobs:
          - name: Installing Node.js
            uses: actions/setup-node@v3
            with:
-              node-version: 16.17.0
+              node-version: 20.11.0
               cache: "npm"
 
          - name: Restoring dependencies
