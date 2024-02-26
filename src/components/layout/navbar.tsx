@@ -7,59 +7,7 @@ export function NavbarComponent() {
   return (
     <div className="relative w-full flex items-center justify-center">
       <Navbar className="top-2" />
-      <p className="text-black dark:text-white">
-        The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?
-
-        The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?   The Navbar will show on top of the page Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Laborum hic in deserunt dolore quis
-        eligendi natus mollitia omnis neque veritatis saepe dolorem, facere fuga
-        minima accusantium explicabo aperiam tenetur libero?
-      </p>
+     
     </div>
   );
 }
