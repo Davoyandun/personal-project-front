@@ -12,7 +12,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    img: StaticImageData;
+    img: StaticImageData | string;
     alt: string;
   }[];
   direction?: "left" | "right";
@@ -25,7 +25,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [start, setStart] = useState(false);
   function addAnimation() {
@@ -91,9 +91,8 @@ export const InfiniteMovingCards = ({
             key={`${idx}-${item.alt}`}
             src={item.img}
             alt={item.alt}
-            height="500"
-            width="500"
-            className="object-contain"
+            width={700}
+            height={700}
           />
         ))}
       </ul>
