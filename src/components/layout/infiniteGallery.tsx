@@ -17,14 +17,14 @@ export function InfiniteGallery() {
   return loadingImages ? (
     <div>
       <motion.h3 className="text-4xl font-bold text-left mt-4 mb-4">
-        Testimonials
+        Conoce Nuestro Trabajo
       </motion.h3>
       <p>Loading...</p>
     </div>
   ) : (
     <div>
       <motion.h3 className="text-4xl font-bold text-left mt-4 mb-4">
-        Testimonials
+        Conoce Nuestro Trabajo
       </motion.h3>
       <InfiniteMovingCards items={finalImages} direction="right" speed="slow" />
     </div>

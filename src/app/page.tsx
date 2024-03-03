@@ -3,6 +3,7 @@
 import { InfiniteGallery } from "@/components/layout/infiniteGallery";
 import { IntroSection } from "@/components/layout/introSection";
 import { NavbarComponent } from "@/components/layout/navbar";
+import { ProvidersSection } from "@/components/layout/providersSection";
 import { ModeToggle } from "@/components/theme/buttonToggleDark";
 import GlobalProvider from "@/context/globalProvider";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <IntroSection />
         <InfiniteGallery />
         <ModeToggle />
+        <ProvidersSection />
       </main>
     </GlobalProvider>
   );
