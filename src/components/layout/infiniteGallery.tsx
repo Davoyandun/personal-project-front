@@ -1,10 +1,8 @@
 "use client";
-
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { motion } from "framer-motion";
 import { ImagesContext } from "@/context/imagesContext";
-import potatoes from "@/assets/potatoes.jpeg";
 export function InfiniteGallery() {
   const { images, loadingImages, errorWithImages } =
     React.useContext(ImagesContext);
@@ -31,9 +29,4 @@ export function InfiniteGallery() {
   );
 }
 
-const testimonials = [
-  {
-    img: potatoes,
-    alt: "image of potatoes",
-  },
-];
+
