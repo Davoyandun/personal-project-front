@@ -1,29 +1,48 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { LampContainer } from "../ui/lamp";
+import React, { useContext } from "react";
+import { ImagesSlider } from "../ui/images-slider";
+import { ImagesContext } from "@/context/imagesContext";
 
 export function IntroSection() {
-  return (
-    <LampContainer>
-      <motion.div
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mt-8 text-center md:text-7xl"
-      >
-        <span className="bg-gradient-to-br from-red-600 to-red-800 py-4 bg-clip-text text-8xl font-medium tracking-tight text-transparent">
+  const { images, loadingImages, errorWithImages } = useContext(ImagesContext);
+  if (loadingImages) {
+    return (
+      <div className="h-[40rem] flex justify-center items-center">
+        <motion.h1 className="font-bold text-xl md:text-9xl text-center bg-clip-text text-transparent bg-gradient-to-b from-red-600 to-red-800 py-4">
           Del @gro
-        </span>
-        <br />
-        <br />
-        <span className="text-7xl font-medium  ">Soluciones para el agro</span>
+        </motion.h1>
+        <motion.p className="font-bold text-xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          Soluciones para el <br /> agro
+        </motion.p>
+      </div>
+    );
+  }
+  const finalImages = images?.map((image: any) => image.img) as string[];
+
+  return (
+    <ImagesSlider className="h-[40rem]" images={finalImages}>
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -80,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="z-50 flex flex-col justify-center items-center"
+      >
+        <motion.h1 className="font-bold text-xl md:text-9xl text-center bg-clip-text text-transparent bg-gradient-to-b from-red-600 to-red-800 py-4">
+          Del @gro
+        </motion.h1>
+        <motion.p className="font-bold text-xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          Soluciones para el <br /> agro
+        </motion.p>
       </motion.div>
-    </LampContainer>
+    </ImagesSlider>
   );
 }
