@@ -5,7 +5,7 @@ import { ImagesSlider } from "../ui/images-slider";
 import { ImagesContext } from "@/context/imagesContext";
 
 export function IntroSection() {
-  const { images, loadingImages, errorWithImages } = useContext(ImagesContext);
+  const { images, loadingImages } = useContext(ImagesContext);
   if (loadingImages) {
     return (
       <div className="h-[40rem] flex justify-center items-center">

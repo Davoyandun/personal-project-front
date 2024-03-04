@@ -4,19 +4,9 @@ import { TbCar } from "react-icons/tb";
 import { BrandsContext } from "@/context/brandsContext";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Brand, FinalBrandItem } from "@/lib/types";
 
-interface Brand {
-  name: string;
-  description: string;
-  img: string;
-}
-interface FinalBrandItem {
-  title: string;
-  description: string;
-  header: JSX.Element;
-  className: string;
-  icon: JSX.Element;
-}
+
 
 export function ProvidersSection() {
   const { brands, loadingBrands } = useContext(BrandsContext);

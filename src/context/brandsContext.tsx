@@ -1,13 +1,8 @@
-import React, { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import fetchBrands from "@/services/api/brandsService";
+import { BrandsContextValue, IBrandsProviderProps } from "@/lib/types";
 
-interface brandsState {
-  brands: [] | null;
-  loadingBrands: boolean;
-  errorWithBrands: string | null;
-}
 
-interface BrandsContextValue extends brandsState {}
 
 const BrandsContext = createContext<BrandsContextValue>({
   brands: null,
@@ -15,9 +10,7 @@ const BrandsContext = createContext<BrandsContextValue>({
   errorWithBrands: null,
 });
 
-interface IBrandsProviderProps {
-  children: React.ReactNode;
-}
+
 
 const BrandsProvider = ({ children }: IBrandsProviderProps) => {
   const [brandsData, setBrandsData] = useState<[] | null>(null);
