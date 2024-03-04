@@ -92,3 +92,16 @@ export interface ButtonProps
 export interface SearchProviderProps {
   children: React.ReactNode;
 }
+
+export interface IProductModalProps {
+  img: string;
+  title: string;
+  description: string;
+  price: string;
+}
+
+export interface ProductCardProps {
+  image: string;
+  title: string;
+  price: string;
+}

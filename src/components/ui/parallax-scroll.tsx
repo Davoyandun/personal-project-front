@@ -2,8 +2,9 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-import { ProductCard } from "../layout/productCard";
+import { ProductModal } from "../layout/productModal";
 import { Product } from "@/lib/types";
+import ProductCard from "../layout/productCard";
 
 export const ParallaxScroll = ({
   products,
@@ -43,19 +44,15 @@ export const ParallaxScroll = ({
                         : { y: translateThird }
                     }
                   >
-                    <Image
-                      src={el.image}
-                      alt={el.title}
-                      className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                      height="400"
-                      width="400"
-                      layout="responsive"
-                      objectFit="cover"
+                    <ProductCard
+                      image={el.image}
+                      title={el.title}
+                      price={el.price}
                     />
                   </motion.div>
                 </DialogTrigger>
                 <DialogContent>
-                  <ProductCard
+                  <ProductModal
                     img={el.image}
                     title={el.title}
                     description={el.description}
