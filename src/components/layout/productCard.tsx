@@ -1,48 +1,30 @@
-"use client";
-import React from "react";
-import { BackgroundGradient } from "../ui/background-gradient";
+import { ProductCardProps } from "@/lib/types";
 import Image from "next/image";
+import React from "react";
 
-export function ProductCard({
-  img,
-  title,
-  description,
-  price,
-}: {
-  img: string;
-  title: string;
-  description: string;
-  price: number;
-  className?: string;
-}) {
+export default function ProductCard({ image, title, price }: ProductCardProps) {
   return (
-    <div>
-      <BackgroundGradient className="row-span-61 rounded-xl group hover:shadow-lg transition duration-200 ease-in-out shadow-md p-6 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-transparent justify-between flex flex-col space-y-4">
-        <div className="flex justify-center">
-          <Image
-            src={img}
-            alt={title}
-            height="200"
-            width="200"
-            className="object-contain rounded-lg border border-gray-300 dark:border-gray-700"
-          />
-        </div>
-        <p className="text-lg sm:text-xl font-semibold text-black dark:text-white mt-4">
-          {title}
-        </p>
+    <div className="  space-y-4 max-w-sm bg-white rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex w-40 h-40 justify-center pt-2">
+        <Image
+          src={image}
+          alt={title}
+          className="object-contain rounded-lg   "
+          width={200}
+          height={200}
+        />
+      </div>
 
-        <p className="text-sm text-neutral-600 dark:text-neutral-300">
-          {description.substring(0, 200) + "..."}
-        </p>
-        <div className="flex justify-between items-center mt-4">
-          <button className="rounded-md bg-gradient-to-r from-red-500 to-red-500 hover:from-red-800 hover:to-purple-500 transition duration-200 ease-in-out text-white py-2 px-4 text-sm font-bold">
-            <span>Precio: </span>
-            <span className="ml-2 bg-neutral-700 dark:bg-neutral-500 rounded-full text-xs px-3 py-1 text-white">
-              ${price}
-            </span>
-          </button>
+      <div className="px-5 pb-5">
+        <h5 className="font-semibold tracking-tight text-black dark:text-white">
+          {title}
+        </h5>
+        <div className="flex justify-between items-center">
+          <span className="text-1xl font-bold text-gray-900 dark:text-white pt-2">
+            ${price}
+          </span>
         </div>
-      </BackgroundGradient>
+      </div>
     </div>
   );
 }

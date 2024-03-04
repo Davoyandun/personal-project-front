@@ -32,10 +32,7 @@ export default function Products() {
             setSearchValue={setSearchValue}
             setSortByPrice={setSortByPrice}
           />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
-            <ParallaxScroll products={searchedProducts} />;
-          </div>
+          <ParallaxScroll products={searchedProducts} />
         </main>
       </div>
     </div>
