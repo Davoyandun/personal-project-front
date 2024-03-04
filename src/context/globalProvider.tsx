@@ -1,10 +1,8 @@
-import React from "react";
 import { ImagesProvider } from "./imagesContext";
 import { BrandsProvider } from "./brandsContext";
+import { IGlobalProviderProps } from "@/lib/types";
 
-interface IGlobalProviderProps {
-  children: React.ReactNode;
-}
+
 
 const GlobalProvider = ({ children }: IGlobalProviderProps) => {
   return (

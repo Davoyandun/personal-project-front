@@ -1,13 +1,8 @@
-import React, { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import fetchImages from "@/services/api/imagesService";
+import { IImagesProviderProps, ImagesContextValue } from "@/lib/types";
 
-interface ImagesState {
-  images: [] | null;
-  loadingImages: boolean;
-  errorWithImages: string | null;
-}
 
-interface ImagesContextValue extends ImagesState {}
 
 const ImagesContext = createContext<ImagesContextValue>({
   images: null,
@@ -15,9 +10,6 @@ const ImagesContext = createContext<ImagesContextValue>({
   errorWithImages: null,
 });
 
-interface IImagesProviderProps {
-  children: React.ReactNode;
-}
 
 const ImagesProvider = ({ children }: IImagesProviderProps) => {
   const [imagesData, setImagesData] = useState<[] | null>(null);

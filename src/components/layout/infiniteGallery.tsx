@@ -1,10 +1,10 @@
-"use client";
+
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { motion } from "framer-motion";
 import { ImagesContext } from "@/context/imagesContext";
 export function InfiniteGallery() {
-  const { images, loadingImages, errorWithImages } =
+  const { images, loadingImages } =
     React.useContext(ImagesContext);
   const finalImages = images?.map((image: any) => {
     return {

@@ -1,4 +1,3 @@
-"use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -38,7 +37,7 @@ export const ImagesSlider = ({
 
   useEffect(() => {
     loadImages();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadImages = () => {
@@ -57,7 +56,9 @@ export const ImagesSlider = ({
         setLoadedImages(loadedImages as string[]);
         setLoading(false);
       })
-      .catch((error) => console.error("Failed to load images", error));
+      .catch((error) => {
+        throw new Error(error);
+      });
   };
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -82,7 +83,7 @@ export const ImagesSlider = ({
       window.removeEventListener("keydown", handleKeyDown);
       clearInterval(interval);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {}, []);

@@ -36,7 +36,6 @@ describe("IntroSection", () => {
       </ImagesContext.Provider>
     );
 
-    console.log(baseElement.innerHTML);
 
     const subTitleSoluciones = getByText(/Soluciones para el/i);
     const titleDelAgro = getByText(/Del @gro/i);
