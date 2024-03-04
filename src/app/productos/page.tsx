@@ -1,6 +1,5 @@
 "use client"
-import Products from "@/components/layout/products";
-import { ParallaxScroll } from "@/components/ui/parallax-scroll";
+import Products from "@/components/features/products/products";
 import { SearchProvider } from "@/context/productsContext";
 
 export default function ParallaxScrollDemo() {

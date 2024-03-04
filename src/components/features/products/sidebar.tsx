@@ -1,11 +1,12 @@
+import { SidebarProps } from "@/lib/types";
 import React from "react";
 
-export default function Sidebar({
+const Sidebar: React.FC<SidebarProps> = ({
   categories,
   setCategoriesFilter,
   setRatingFilter,
   ratingFilter,
-}) {
+}) => {
   const handleCategoryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { checked, name } = e.target;
     if (checked) {
@@ -51,7 +52,6 @@ export default function Sidebar({
           Rates:
         </h2>
         <div className="space-y-2">
-          {/* ... */}
           {[1, 2, 3, 4].map((rating) => (
             <div className="flex items-center" key={rating}>
               <button onClick={() => handleClick(rating)}>
@@ -75,4 +75,6 @@ export default function Sidebar({
       </div>
     </aside>
   );
-}
+};
+
+export default Sidebar;

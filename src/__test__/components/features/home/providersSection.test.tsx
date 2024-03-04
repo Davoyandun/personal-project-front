@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrandsContext } from "@/context/brandsContext";
-import { ProvidersSection } from "@/components/layout/providersSection";
+import  ProvidersSection  from "@/components/features/home/providersSection";
 
 describe("ProvidersSection", () => {
   const brandsMock = [

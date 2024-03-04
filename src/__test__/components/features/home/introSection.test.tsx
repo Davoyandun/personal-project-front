@@ -20,8 +20,8 @@ global.IntersectionObserver = class IntersectionObserver {
 };
 import React from "react";
 import { render } from "@testing-library/react";
-import { IntroSection } from "@/components/layout/introSection";
 import { ImagesContext } from "@/context/imagesContext";
+import  IntroSection  from "@/components/features/home/introSection";
 
 describe("IntroSection", () => {
   it("renders the titles with correct styles", () => {
