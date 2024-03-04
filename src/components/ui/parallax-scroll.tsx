@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-import { ProductModal } from "../layout/productModal";
+import { ProductModal } from "../features/products/productModal";
 import { Product } from "@/lib/types";
-import ProductCard from "../layout/productCard";
+import ProductCard from "../features/products/productCard";
 
 export const ParallaxScroll = ({
   products,

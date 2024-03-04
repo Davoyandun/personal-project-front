@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import React, { useContext } from "react";
-import { ImagesSlider } from "../ui/images-slider";
+import { ImagesSlider } from "../../ui/images-slider";
 import { ImagesContext } from "@/context/imagesContext";
 
-export function IntroSection() {
+const IntroSection = () => {
   const { images, loadingImages } = useContext(ImagesContext);
   if (loadingImages) {
     return (
@@ -45,4 +45,6 @@ export function IntroSection() {
       </motion.div>
     </ImagesSlider>
   );
-}
+};
+
+export default IntroSection;

@@ -1,15 +1,14 @@
-
 import React from "react";
-import { BackgroundGradient } from "../ui/background-gradient";
+import { BackgroundGradient } from "../../ui/background-gradient";
 import Image from "next/image";
 import { IProductModalProps } from "@/lib/types";
 
-export function ProductModal({
+const ProductModal = ({
   img,
   title,
   description,
   price,
-}: IProductModalProps) {
+}: IProductModalProps) => {
   return (
     <div>
       <BackgroundGradient className="row-span-61 rounded-xl group hover:shadow-lg transition duration-200 ease-in-out shadow-md p-6 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-transparent justify-between flex flex-col space-y-4">
@@ -40,4 +39,6 @@ export function ProductModal({
       </BackgroundGradient>
     </div>
   );
-}
+};
+
+export default ProductModal;

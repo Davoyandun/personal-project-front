@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Sidebar from "./sidebar";
 import SearchBar from "./searchBar";
 
-export default function Products() {
+const Products = () => {
   const {
     searchedProducts,
     categories,
@@ -37,4 +37,6 @@ export default function Products() {
       </div>
     </div>
   );
-}
+};
+
+export default Products;

@@ -1,8 +1,7 @@
 import { ProductCardProps } from "@/lib/types";
 import Image from "next/image";
 import React from "react";
-
-export default function ProductCard({ image, title, price }: ProductCardProps) {
+const ProductCard = ({ image, title, price }: ProductCardProps) => {
   return (
     <div className="  space-y-4 max-w-sm bg-white rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
       <div className="flex w-40 h-40 justify-center pt-2">
@@ -27,4 +26,6 @@ export default function ProductCard({ image, title, price }: ProductCardProps) {
       </div>
     </div>
   );
-}
+};
+
+export default ProductCard;

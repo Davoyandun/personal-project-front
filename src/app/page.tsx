@@ -1,9 +1,8 @@
 "use client";
-import { AboutUs } from "@/components/layout/aboutUs";
-import { InfiniteGallery } from "@/components/layout/infiniteGallery";
-import { IntroSection } from "@/components/layout/introSection";
-import { NavbarComponent } from "@/components/layout/navbar";
-import { ProvidersSection } from "@/components/layout/providersSection";
+import AboutUs from "@/components/features/home/aboutUs";
+import InfiniteGallery from "@/components/features/home/infiniteGallery";
+import IntroSection from "@/components/features/home/introSection";
+import ProvidersSection from "@/components/features/home/providersSection";
 import GlobalProvider from "@/context/globalProvider";
 
 export default function Home() {

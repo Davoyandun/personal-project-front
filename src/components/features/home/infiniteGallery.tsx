@@ -1,11 +1,9 @@
-
 import React from "react";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "../../ui/infinite-moving-cards";
 import { motion } from "framer-motion";
 import { ImagesContext } from "@/context/imagesContext";
-export function InfiniteGallery() {
-  const { images, loadingImages } =
-    React.useContext(ImagesContext);
+const InfiniteGallery = () => {
+  const { images, loadingImages } = React.useContext(ImagesContext);
   const finalImages = images?.map((image: any) => {
     return {
       img: image.img,
@@ -27,6 +25,6 @@ export function InfiniteGallery() {
       <InfiniteMovingCards items={finalImages} direction="right" speed="slow" />
     </div>
   );
-}
+};
 
-
+export default InfiniteGallery;

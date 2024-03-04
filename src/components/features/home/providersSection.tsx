@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../../ui/bento-grid";
 import { TbCar } from "react-icons/tb";
 import { BrandsContext } from "@/context/brandsContext";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Brand, FinalBrandItem } from "@/lib/types";
 
-
-
-export function ProvidersSection() {
+const ProvidersSection = () => {
   const { brands, loadingBrands } = useContext(BrandsContext);
 
   if (loadingBrands) {
@@ -51,4 +49,6 @@ export function ProvidersSection() {
       </BentoGrid>
     </div>
   );
-}
+};
+
+export default ProvidersSection;

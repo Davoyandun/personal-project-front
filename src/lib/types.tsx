@@ -105,3 +105,10 @@ export interface ProductCardProps {
   title: string;
   price: string;
 }
+
+export interface SidebarProps {
+  categories: string[];
+  setCategoriesFilter: (value: React.SetStateAction<string[]>) => void;
+  setRatingFilter: (value: React.SetStateAction<number>) => void;
+  ratingFilter: number;
+}
